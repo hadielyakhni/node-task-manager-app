@@ -14,6 +14,6 @@ app.get('', (req, res) => {
   res.send('Welcome to my task-manager Rest API. Use http(s) to interact with it.')
 })
 
-console.log(process.env)
+const port = process.env.PORT
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
